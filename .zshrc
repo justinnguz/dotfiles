@@ -102,3 +102,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Automatically list directory contents after changing directories
+chpwd_auto_ls() {
+    ls
+}
+add-zsh-hook chpwd chpwd_auto_ls
+
+
+alias cat='bat'
+alias ls='ls -a'
